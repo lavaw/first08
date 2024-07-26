@@ -3,6 +3,8 @@
 Summary:
 In this project, we'll discuss use cases, a common way of describing requirements for systems that contain models of software system behavior or ways for users to interact with the system.
 
+💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
+
 ## Contents
 
 1. [Chapter I](#chapter-i) \
@@ -285,5 +287,3 @@ For Task 1, describe the basic flow and alternative flows of functional interact
 1. Describe the flows of the use case(s) as required in 1-11 ex.01.
 2. Describe the flows of the identified use case(s).  . 
 3. Indicate your answers in the file ex04\_<product prefix>\_use case.docx.
-
-💡 [Tap here](https://forms.yandex.ru/cloud/65b909962530c20871f533f5/) **to leave your feedback on the project**. Product Team really tries to make your educational experience better.
