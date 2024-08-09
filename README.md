@@ -94,9 +94,9 @@ Business need of the primary actor. A brief description of the use case's outcom
 *Scope*
 Can be seen as:
 
-- black box - only external human and system actions are described;
-- semi-transparent box - it is generally clear what happens inside the system when interacting, but without technical details;
-- transparent box - the details of what happens inside the system when interacting are clear.
+- black box — only external human and system actions are described;
+- semi-transparent box — it is generally clear what happens inside the system when interacting, but without technical details;
+- transparent box — the details of what happens inside the system when interacting are clear.
 
 *Preconditions*
 One or more conditions that must be true before the use case is executed. The precondition is checked before the use case starts, it is not part of the use case.
@@ -203,13 +203,13 @@ The first step was to collect orders from stores and caterers in any way possibl
 
 ### Task 3. Warehouse Storage <div id="43"></div>
 
-A logistics company engaged in cargo transportation has decided to expand its business and organize the lease of warehouses for temporary or permanent storage of things and goods for individuals and legal entities. It is planned to rent and build warehouses in different parts of the city. The first: "Kamorka" - a system in the company, which provides accounting of rent of individual boxes of size from 3 to 15 square meters by individuals for storage of personal belongings, furniture, sports equipment.
+A logistics company engaged in cargo transportation has decided to expand its business and organize the lease of warehouses for temporary or permanent storage of things and goods for individuals and legal entities. It is planned to rent and build warehouses in different parts of the city. The first: "Kamorka" — a system in the company, which provides accounting of rent of individual boxes of size from 3 to 15 square meters by individuals for storage of personal belongings, furniture, sports equipment.
 
 The management of the company (customer) decided to introduce a centralized rental accounting of boxes, occupied and vacant, payment, access control and cleaning after vacating. Access to the warehouse itself is provided by a third party security company, which needs to be informed about new or dropped customers. The security company issues an electronic pass to the storage area for the specified period of time, extends or stops the validity of the pass in case of renewal or early termination of the lease agreement. The boxes are cleaned by the cleaning company after their use and before they are handed over to a new client. The purpose of the system implementation is to reduce manual work and personnel costs, reduce overhead costs, optimize box filling (minimize idle time of empty boxes), operational accounting of cash flow.
 
 The client (individual) contacts the logistics company and through the manager concludes a contract for renting a box of the required size. To do this, the manager must have up-to-date information about available and soon-to-be vacant boxes. The client does not interact directly with the system, all information is provided by the manager. When the contract expires, the manager warns the client of the need to renew or terminate the contract and vacate the box. The manager is also responsible for organizing the cleaning of the boxes by a third-party company after they are vacated, as well as for organizing the client's access to the storage area, which is provided by a security company. After signing the contract, the manager informs the storekeeper about the allocation of a particular vacant box. The storekeeper checks the availability of the box (release of the previous tenant's belongings and cleaning), hands over the key to the box to the client, controls the release and cleaning of the boxes.
 
-The team has an accountant. He/she calculates payments and controls income, payments to clients, payments for cleaning of boxes and security of the warehouse. The accountant receives information about new contracts and their changes from the manager. The payment for the cleaning of the boxes is calculated monthly on the basis of the area, the payment for the security - also monthly on the basis of the number of clients of the logistics company.
+The team has an accountant. He/she calculates payments and controls income, payments to clients, payments for cleaning of boxes and security of the warehouse. The accountant receives information about new contracts and their changes from the manager. The payment for the cleaning of the boxes is calculated monthly on the basis of the area, the payment for the security — also monthly on the basis of the number of clients of the logistics company.
 
 ## Chapter V <div id="chapter-v"></div>
 
@@ -235,17 +235,17 @@ For Task 1, use the Use Case form to describe the interaction with the system to
 
 For Task 1, use the Use Case form to describe the functional interaction for providing the actual schedule of master services in the system (without taking into account occupied and free slots) (Use Case described in ex.00).
 
-1. When describing flows, use simple short sentences in the format: <*stakeholder or system*> <action to be performed> <conditions and/or constraints> *(subject - predicate - complements)*.
+1. When describing flows, use simple short sentences in the format: <*stakeholder or system*> <action to be performed> <conditions and/or constraints> *(subject — predicate — complements)*.
 2. Use business rather than technical terms to describe steps.
 3. All data transferred in a single time interval from a single source in a single direction should be transferred in a single step. 
-4. Maintain the use case level in all its description up to the 5th level of nesting or implement an extension - another use case.
+4. Maintain the use case level in all its description up to the 5th level of nesting or implement an extension — another use case.
 5. Minimize branching: use "The system confirms..." instead of "The system checks...". (To avoid writing "If... then...").
 6. Reduce complex interactions to e.g. 4 transaction steps:
    1. The stakeholder enters the request, transfers the data;
    2. The system confirms the correctness of the input;
    3. The system modifies ....;
    4. The system outputs the result ...
-7. If there are additional materials (user interface descriptions, prototypes, business rules, etc.) - place them separately from the use case, specify them with a link in the Additional field.
+7. If there are additional materials (user interface descriptions, prototypes, business rules, etc.) — place them separately from the use case, specify them with a link in the Additional field.
 8. Describe the main scenario of the use case, using a numerical numbering of steps.
 9. Number alternative scenarios with letters in relation to the step of the main scenario.
 10. Alternate scenario steps should be numbered with:
