@@ -47,7 +47,7 @@ The use case shows the agreements of the participants in the system about its be
 
 ### General Rules <div id="21"></div>
 
-1. Along the way, you may feel a sense of uncertainty and a severe lack of information: that's OK. Remember, the information in the repository and on Google is always with you. So are your peers and Slack. Communicate. Search. Use common sense. Don't be afraid to make mistakes.
+1. Along the way, you may feel a sense of uncertainty and a severe lack of information: that's OK. Remember, the information in the repository and on Google is always with you. So are your peers and RocketChat. Communicate. Search. Use common sense. Don't be afraid to make mistakes.
 2. Pay attention to sources of information. Check. Think. Analyse. Compare. 
 3. Look at the text of each assignment. Read it several times. 
 4. Read the examples carefully. There may be something in them that is not explicitly stated in the task itself.
@@ -77,41 +77,41 @@ Use case allows you to discuss and agree on the behavior of the system during th
 
 Use case is a description of a case, a branch of interaction.  Use cases are a set of scenarios under different conditions.
 
-***Use Case Description***
-*Header:*
+***Use Case Description***\
+*Header:*\
 The header should have a unique title. Usually a verb (indicating the action to be performed by the participant) + a noun (describing what is being done) or the purpose of the action.
 
 *Actors*
 
-*An Actor*: an external party that interacts with the system. An actor can be a generalized person, a group of people (a role), or another system. Some approaches discourage the use of systems as actors.
-*Primary actor*: a stakeholder who derives business value from the interaction and is the initiator of the interaction. Does not necessarily participate in the interaction themselves. 
-*Stakeholder*: anyone with an interest in interacting with the system. The use case should take into account the interests of the stakeholders.
+- *An Actor*: an external party that interacts with the system. An actor can be a generalized person, a group of people (a role), or another system. Some approaches discourage the use of systems as actors.
+- *Primary actor*: a stakeholder who derives business value from the interaction and is the initiator of the interaction. Does not necessarily participate in the interaction themselves. 
+- *Stakeholder*: anyone with an interest in interacting with the system. The use case should take into account the interests of the stakeholders.
 You can read more about the participants and primary actors in Chapter 4 "Stakeholders and Actors" of Alistair Coburn's book "Writing Effective Use Cases".
 
-*Goal*
+*Goal*\
 Business need of the primary actor. A brief description of the use case's outcome from the primary actor's point of view in domain terms, not technical terms.
 
-*Scope*
+*Scope*\
 Can be seen as:
 
 - black box — only external human and system actions are described;
 - semi-transparent box — it is generally clear what happens inside the system when interacting, but without technical details;
 - transparent box — the details of what happens inside the system when interacting are clear.
 
-*Preconditions*
+*Preconditions*\
 One or more conditions that must be true before the use case is executed. The precondition is checked before the use case starts, it is not part of the use case.
 
-*Trigger*
+*Trigger*\
 The event which triggers the use case. It can be an action of a participant, a time event, a change of state of an object, etc. The trigger can be the first step of the use case or can precede the use case.
 
-*Postconditions (guarantees)*
+*Postconditions (guarantees)*\
 A condition that must be true at the end of a use case. The postcondition must be true for both base and alternative flows. The use case can describe postconditions separately for each flow. 
 
 *Minimal Guarantees* describe conditions that must be true for both successful and unsuccessful completion of a use case (even if the primary actor's goal is not achieved). 
 
 *Success Guarantees* describe the postconditions for a successful outcome.
 
-More details about the stakeholders and primary actors can be found in Chapter 6 “Preconditions, Triggers, Guarantees” of Alistair Coburn's book "Writing Effective Use Cases".
+More details about the stakeholders and primary actors can be found in Chapter 6 "Preconditions, Triggers, Guarantees" of Alistair Coburn's book "Writing Effective Use Cases".
 
 *Event Flow*
 
@@ -138,7 +138,7 @@ There is no universal format for use cases. Typically, teams choose one or anoth
 3. Use ***simple sentences***. For each step, indicate ***who performs the action:*** the stakeholder (role) or the system. Example sentence structure: <subject> <causative> <indirect complement> <prepositional phrase>, for example: The system authenticates the name and password.
 4. Collect in one step **all data transmitted in one direction**. For example, transmit full name and other personal information in one step.
 5. Apply "The system confirms..." instead of "The system checks...".  
-6. Reduce complex ***interactions to a 4 step*** transaction, e.g.: 
+6. Reduce complex ***interactions to a 4-step*** transaction, e.g: 
    1) Stakeholder enters a request and submits data;
    2) The system checks (confirms) ....;
    3) The system modifies ...;
@@ -147,23 +147,22 @@ There is no universal format for use cases. Typically, teams choose one or anoth
    1) the steps of the basic flow should be numbered in simple numbering;
    2) the steps of the alternative flow should be numbered in their simple numbering, but with reference to the step of the basic flow from which there is a deviation. It is convenient to use numeric-letter numbering. An example is given below.
 8. It is recommended that user interface, non-functional requirements, business rules should not be written directly in the use case, but described separately and referenced in the use case in the Extras field.
-9. Keep the use case level throughout its description, do not overload it with unnecessary details.
+9. Keep the use case at the same level throughout its description, do not overload it with unnecessary details.
 
-**Example**: **use case "Buy stocks over the web"*.
+**Example**: **Use Case "Buy stocks over the web"*.
 
-*Precondition:* user already has PAF open.
+*Precondition:* User already has PAF open.
 
 *Trigger:* User selects stocks.
 
 *Main scenario:*
 
-1. User selects to buy stocks over the web;
-2. PAF gets name of web site to use (Schwab, etc.) from user;
-3. PAF opens web connection to the site, retaining control;
-4. User browses and buys stock from the web site;
-5. PAF intercepts responses from the web site, and updates the user's portfolio;
+1. User selects to buy stocks over the web.
+2. PAF gets name of web site to use (Schwab, etc.) from user.
+3. PAF opens web connection to the site, retaining control.
+4. User browses and buys stock from the web site.
+5. PAF intercepts responses from the web site, and updates the user's portfolio.
 6. PAF shows the user the new portfolio standing.
-
 
 *Result* (success guarantee): The user bought the securities.
 
@@ -187,7 +186,7 @@ Another type of relationship, *extend*, allows you to add a description of addit
 
 The management of a chain of barbershops decided to implement an online booking system. The main objective is to develop the business by expanding the customer base through the possibility of online registration, as well as to reduce employee labour costs and manual labour by automatically informing customers through communication channels. 
 
-Both registered and unregistered visitors can book an appointment on the website. When making an appointment, they can select the type of service: hairdressing or cosmetology, as well as the service itself, the master and the time from the available intervals. The system should provide automatic sending of reminders to clients through the communication channel chosen by the client (Telegram, WhatsApp, VK, sms) according to the schedule set by the manager. After receiving a service, the system offers the client to evaluate the service and write suggestions on how to improve the work.
+Both registered and unregistered visitors can book an appointment on the website. When making an appointment, they can select the type of service: hairdressing or cosmetology, as well as the service itself, the master and the time from the available intervals. The system should provide automatic sending of reminders to clients through the communication channel chosen by the client (Telegram, WhatsApp, VK, SMS) according to the schedule set by the manager. After receiving a service, the system offers the client to evaluate the service and write suggestions on how to improve the work.
 
 The schedule of masters and the services provided by each master should be entered by the manager, who may be more than one person. This person is also responsible for keeping the schedule up to date and adjusting it if necessary, communicating with customers manually, marking the service, charging and accepting payment, sending the payment data to the accounting department. The manager can also receive reports on completed services and view customer feedback.
 
@@ -259,7 +258,7 @@ For Task 1, use the Use Case form to describe the functional interaction for pro
 For Task 1, use the Use Case form to describe how the client interacts with the system to select master services and book the selected slots.
 
 1. Describe the use cases as required in 1-11 ex.00.
-Identify one or more separate use case(s) with an include or extend relationship.  
+Identify one or more separate use case(s) with an "include" or "extend" relationship.  
 3. Specify the type of relationship for each identified use case.
 4. Indicate your answers in the file ex02\_<product prefix>\_use case.docx.
 
@@ -276,7 +275,7 @@ For Task 1, describe the basic flow and alternative flows of functional interact
 For Task 1, use the Use Case form to describe the Master's interaction with the system in terms of viewing clients' booked services, their schedules, and clients' feedback on the work. 
 
 1. Describe the use cases as required in 1-11 ex.00.
-2. Identify a separate use case(s), with an include or extend relationship. 
+2. Identify a separate use case(s), with an "include" or "extend" relationship. 
 3. Specify the type of relationship for each identified use case.
 4. Indicate your answers in the file ex04\_<product prefix>\_use case.docx.
 
@@ -285,5 +284,5 @@ For Task 1, use the Use Case form to describe the Master's interaction with the 
 For Task 1, describe the basic flow and alternative flows of functional interaction between the master and the system to view services booked by clients and client feedback on the work. 
 
 1. Describe the flows of the use case(s) as required in 1-11 ex.01.
-2. Describe the flows of the identified use case(s).  . 
+2. Describe the flows of the identified use case(s). 
 3. Indicate your answers in the file ex04\_<product prefix>\_use case.docx.
